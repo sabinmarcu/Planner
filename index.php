@@ -3,7 +3,7 @@
 ?>
 <!DOCTYPE html>
 <head>
-	<title>	Planificator v1.0	</title>
+	<title>	Planiflex v1.0	</title>
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	<link rel="stylesheet" href="/css/date_input.css" type="text/css" media="screen" title="no title" charset="utf-8">
 	
@@ -14,7 +14,7 @@
 	
 </head>
 <body>
-	<header>	Planifex v1.0	</header>
+	<header>	Planiflex v1.0	</header>
 	<section id='admin' style="<?php if ($_SESSION[id]) echo "display: block"; ?>">	<a href='javascript:form("admin")'>Profilul meu</a> | <a href='javascript:form("logout")'>Deautentifica-ma</a> <br> <a href='javascript:form("date")'>Alege o luna</a>	</section>
 	<article>
 		<?php if (!isset($_SESSION[id])) : ?><a href='javascript:form("login")' class='abloc'>Autentifica-te !</a> <?php else : include 'php/table.php'; endif; ?>
