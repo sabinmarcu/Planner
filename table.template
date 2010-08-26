@@ -1,0 +1,102 @@
+
+	<table cellspacing='0' cellpadding='0'>
+		<tr class='info'>
+			<th>	Luni	</th>
+			<th>	Marti	</th>
+			<th>	Miercuri	</th>
+			<th>	Joi	</th>
+			<th>	Vineri	</th>
+			<th>	Sambata 	</th>
+			<th>	Duminica	</th>
+		</tr>
+		<tr class='zile'>
+			<td class='inv'>	29	</td>
+			<td class='inv'>	30	</td>
+			<td class='inv'>	31	</td>
+			<td>	1	</td>
+			<td>	2	</td>
+			<td>	3 	</td>
+			<td>	4	</td>
+		</tr>
+		<tr class='plan'>
+			<td class='inv'>	-	</td>
+			<td class='inv'>	-	</td>
+			<td class='inv'>	Z	</td>
+			<td>	N	</td>
+			<td>	-	</td>
+			<td>	- 	</td>
+			<td>	Z	</td>
+		</tr>
+		<tr class='zile'>
+			<td>	5	</td>
+			<td>	6	</td>
+			<td>	7	</td>
+			<td>	8	</td>
+			<td>	9	</td>
+			<td>	10 	</td>
+			<td>	11	</td>
+		</tr>
+		<tr class='plan'>
+			<td>	N	</td>
+			<td>	-	</td>
+			<td>	-	</td>
+			<td>	Z	</td>
+			<td>	N	</td>
+			<td>	- 	</td>
+			<td>	-	</td>
+		</tr>
+		<tr class='zile'>
+			<td>	12	</td>
+			<td>	13	</td>
+			<td>	14	</td>
+			<td>	15	</td>
+			<td>	16	</td>
+			<td>	17 	</td>
+			<td>	18	</td>
+		</tr>
+		<tr class='plan'>
+			<td>	Z	</td>
+			<td>	N	</td>
+			<td>	-	</td>
+			<td>	-	</td>
+			<td>	Z	</td>
+			<td>	N 	</td>
+			<td>	-	</td>
+		</tr>
+		<tr class='zile'>
+			<td>	19	</td>
+			<td>	20	</td>
+			<td>	21	</td>
+			<td>	22	</td>
+			<td>	23	</td>
+			<td>	24 	</td>
+			<td>	25	</td>
+		</tr>
+		<tr class='plan'>
+			<td>	-	</td>
+			<td>	Z	</td>
+			<td>	N	</td>
+			<td>	-	</td>
+			<td>	-	</td>
+			<td>	Z 	</td>
+			<td>	N	</td>
+		</tr>
+		<tr class='zile'>
+			<td>	26	</td>
+			<td>	27	</td>
+			<td>	28	</td>
+			<td>	29	</td>
+			<td>	30	</td>
+			<td class='inv'>	1 	</td>
+			<td class='inv'>	12	</td>
+		</tr>
+		<tr class='plan'>
+			<td>	-	</td>
+			<td>	-	</td>
+			<td>	Z	</td>
+			<td>	N	</td>
+			<td>	-	</td>
+			<td class='inv'>	- 	</td>
+			<td class='inv'>	Z	</td>
+		</tr>
+	</table>

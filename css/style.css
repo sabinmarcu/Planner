@@ -1,0 +1,128 @@
+body{
+	background: url('/images/bbg.png');
+	font-family: 'Calibri', 'Gill Sans', 'Kalimba', 'Lucida Grande', 'Segoe Ui', 'Lucida Console', 'Tahoma', sans-serif;
+	color: white;
+}
+header{
+	font-size: 25pt;
+	font-weight: bold;
+	margin: 100px 10% 50px;
+	text-shadow: 0 1px 1px black;
+}
+section, article{
+	background: url(/images/bg.png) repeat-x top center #dde;
+	padding: 15px;
+	margin: 25px auto;
+	border-radius: 5px;
+	text-align: center;
+	width: 670px;
+	color: #444;
+}
+section{
+	display: none;
+}
+a, a:visited{
+	color: #666;
+	text-decoration: none;
+	text-shadow: 0 1px 1px  white;
+}
+a:hover{
+	color: #444;
+}
+a:active{
+	color: #222;
+}
+
+article{
+	padding: 0;
+	width: 700px;
+	margin: 50px auto;
+	-webkit-box-shadow: 0 0 50px #222;
+}
+
+table{
+	width: 100%;
+	height: 100%;
+}
+td, th{
+	width: 100px;
+	color: #222;
+	text-shadow: 0 1px 1px  white;
+	font-size: 10pt;
+	font-weight: bold;
+	text-align: center;
+}
+th{
+	background: url(/images/bg.png) repeat-x top center #bfc0ff;
+	padding: 20px;
+	border: solid 1px #666;
+	border-left: none;
+	border-top: none;
+	border-bottom: solid 1px #444;
+}
+td{
+	padding: 5px;
+	background: url(/images/bg.png) repeat-x top center #ddf;
+	border: solid 1px #888;
+	border-left: none;
+	border-top: none;
+	color: #911;
+	font-size: 12pt;
+}
+tr.zile td{
+	font-size: 10pt;
+	background: url(/images/bg.png) repeat-x top center #eef;
+	color: #444;
+	font-weight: normal;
+	border-bottom: solid 1px #ccc;
+}
+.inv, tr.zile td.inv{
+	color: #ccc;
+	font-size: 10pt;
+	font-weight: normal;
+	border: solid 1px #bbb;
+	border-left: none;
+	border-top: none;
+	background: url(/images/bg.png) repeat-x top center #fff;
+	
+}
+form{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 25px 0;
+}
+label, input{
+	display: inline-block;
+	width: 45%;
+	padding: 5px;
+	margin: 5px 0;
+}
+input{
+	background: white;
+	border: solid 1px #ccc;
+	border-bottom: solid 1px #999;
+	border-right: solid 1px #999;
+	border-radius: 5px;
+}
+label{
+	color: #999;
+}
+.abloc{
+	display: block;
+	padding: 50px;
+}
+.button{
+	width: 85%;
+	margin: 15px 0;
+}
+a.button{	
+	display: inline-block;
+	background: white;
+	border: solid 1px #ccc;
+	border-bottom: solid 1px #999;
+	border-right: solid 1px #999;
+	border-radius: 5px;
+	margin: 5px 0;
+}
