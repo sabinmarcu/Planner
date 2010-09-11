@@ -1,5 +1,5 @@
 body{
-	background: url('/images/bbg.png');
+	background: #222;
 	font-family: 'Calibri', 'Gill Sans', 'Kalimba', 'Lucida Grande', 'Segoe Ui', 'Lucida Console', 'Tahoma', sans-serif;
 	color: white;
 }
@@ -125,4 +125,16 @@ a.button{
 	border-right: solid 1px #999;
 	border-radius: 5px;
 	margin: 5px 0;
+}
+aside{
+	width: 670px;
+	margin: 0 auto;
+	font-size: 10pt;
+	color: #888;
+}
+aside ul{
+	color: #999;
+}
+aside ul span{
+	color: #ccc;
 }

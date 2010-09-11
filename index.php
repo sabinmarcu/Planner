@@ -20,5 +20,13 @@
 		<?php if (!isset($_SESSION[id])) : ?><a href='javascript:form("login")' class='abloc'>Autentifica-te !</a> <?php else : include 'php/table.php'; endif; ?>
 	</article>	
 	<section id='luna' style="<?php if ($_SESSION[id]) echo "display: block"; ?>">	Luna Curenta	</section>
-	<aside></aside>
+	<aside>
+		<p>Acest program functioneaza pe baza unui tipar si a unei zi de pornire. Spre exemplu, in timpul saptamanii aveti program normal si in weekend aveti liber. In programul acesta se traduce prin : </p>
+		<ul>
+			<li>Tipar : <span>Lucru > Lucru > Lucru > Lucru > Lucru > Liber > Liber</span></li>
+			<li>Zi de inceput : <span>Orice zi de luni</span></li>
+		</ul>
+		<p>Pornind de la aceste date, programul poate calcula o luna din anul 2500 daca doriti.</p>
+		<p>De asenenea, cu tabelul in fata, daca doriti ca doar o zi sa fie tratata special, atunci doar dati click pe ea si introduceti particularitatea. Daca nu o mai doriti, apasati click dreapta pe casuta respectiva si va aparea programul corect conform tiparului.</p>
+	</aside>
 </body>
