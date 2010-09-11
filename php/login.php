@@ -1,5 +1,6 @@
 <?php
 	include 'functions.php';
+	if ($_GET[username] && $_GET[password])	:
 	if (strpos(secure($_GET[username]), " "))	{
 		$data[result] = 'fail';
 		$data[problem] = 'Numele de utilizator este invalid!';
@@ -28,4 +29,10 @@
 			exit;
 		}
 	}
+	else : 
+		$data[result] = 'fail';
+		$data[problem] = 'Trebuie sa introduci atat parola cat si numele de utilizator!';
+		echo json_encode($data);
+		exit;
+	endif;
 ?>

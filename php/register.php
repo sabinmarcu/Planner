@@ -1,5 +1,6 @@
 <?php
 	include 'functions.php';
+	if ($_GET[password] && $_GET['repassword'] && $_GET['username'] && $_GET['name'])	:
 	if (secure($_GET[password]) != secure($_GET[repassword]))	{
 		$data[result] = 'fail';
 		$data[problem] = 'Ai introdus 2 parole diferite.';
@@ -43,4 +44,10 @@
 			}
 		}
 	}
+	else :
+		$data[result] = 'fail';
+		$data[problem] = 'Trebuie sa introduci atat parola cat si numele de utilizator!';
+		echo json_encode($data);
+		exit;
+	endif;
 ?>

@@ -103,20 +103,26 @@ function table(date)	{
 }
 
 $(document).ready(function() {
-	$('tr.plan td:not(.inv)').live('click', function() {
+	$("tr.plan td:not(.inv)").live('contextmenu', function(e) {
 		id = $(this).attr('id');
-		if ($(this).html().trim() != "Co")		{
-			if(confirm("Vrei sa setezi aceasta zi ca si zi de concediu?"))
-				$.getJSON('/php/setday.php', {day: id}, function(data){
-					if (data['result'] == 'success') $("tr.plan td#"+id).html("Co");
-					else alert(data['result']);
-				});
+		text = $(this).html();
+		if(confirm("Vrei sa stergi ziua speciala si sa te intorci la tipar?"))
+		$.getJSON('/php/delday.php', {day: id, text: text}, function(data){
+			if (data['result'] == 'success') {
+				$("tr.plan td#"+id).html(data['plan']);
 			}
-		else if(confirm("Vrei sa stergi aceasta zi de concediu?"))	{
-				$.getJSON('/php/delday.php', {day: id}, function(data){
-					if (data['result'] == 'success') $("tr.plan td#"+id).html(data['plan']);
-					else alert(data['result']);
+			else alert(data['problem']);
+		});
+		return false;
+	});
+	
+	$('tr.plan td:not(.inv)').live('click', function(e) {
+		id = $(this).attr('id');
+		 var answer = prompt("Ce fel de zi va fi aceasta?");
+		if(answer != null)
+			$.getJSON('/php/setday.php', {day: id, text: answer}, function(data){
+				if (data['result'] == 'success') $("tr.plan td#"+id).html(answer);
+					else alert(data['problem']);
 				});
-			}
 	});
 });

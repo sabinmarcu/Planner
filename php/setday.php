@@ -1,9 +1,9 @@
 <?php
 	session_start();
 	include 'functions.php';
-	$data = explode(",", str_replace(" ", "", secure($_SESSION[zilelibere])));
-	$data[count($data)] = strtotime(secure($_GET[day]));
-	$_SESSION[zilelibere]  = implode(", ", $data);
+	$data = explode(",", secure($_SESSION[zilelibere]));
+	$data[count($data)] = str_replace(",,", "", strtotime(secure($_GET[day]))." ".secure($_GET[text]));
+	$_SESSION[zilelibere]  = implode(",", $data);
 	connect();
 	if (mysql_query("UPDATE users SET zilelibere = '".secure($_SESSION[zilelibere])."' WHERE id = '".$_SESSION[id]."'"))
 		{
