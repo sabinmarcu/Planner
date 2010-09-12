@@ -3,13 +3,13 @@ body{
 	font-family: 'Calibri', 'Gill Sans', 'Kalimba', 'Lucida Grande', 'Segoe Ui', 'Lucida Console', 'Tahoma', sans-serif;
 	color: white;
 }
-header{
+.header{
 	font-size: 25pt;
 	font-weight: bold;
 	margin: 100px 10% 50px;
 	text-shadow: 0 1px 1px black;
 }
-section, article{
+.section, .article{
 	background: url(/images/bg.png) repeat-x top center #dde;
 	padding: 15px;
 	margin: 25px auto;
@@ -18,7 +18,7 @@ section, article{
 	width: 670px;
 	color: #444;
 }
-section{
+.section{
 	display: none;
 }
 a, a:visited{
@@ -33,7 +33,7 @@ a:active{
 	color: #222;
 }
 
-article{
+.article{
 	padding: 0;
 	width: 700px;
 	margin: 50px auto;
@@ -126,15 +126,15 @@ a.button{
 	border-radius: 5px;
 	margin: 5px 0;
 }
-aside{
+.aside{
 	width: 670px;
 	margin: 0 auto;
 	font-size: 10pt;
 	color: #888;
 }
-aside ul{
+.aside ul{
 	color: #999;
 }
-aside ul span{
+.aside ul span{
 	color: #ccc;
 }

@@ -1,5 +1,5 @@
 function form(type){
-	$("article").load("/php/form.php", {form: type}, function(){
+	$("div.article").load("/php/form.php", {form: type}, function(){
 		$(this).fadeOut(250).fadeIn(250);
 		switch (type)	{
 			case 'login' :
@@ -16,7 +16,7 @@ function form(type){
 						else {
 							alert("Bine ai revenit, "+data['name']);
 							table();
-							$("section").fadeIn(500);
+							$("div.section").fadeIn(500);
 						}
 					})
 				return false;
@@ -41,7 +41,7 @@ function form(type){
 						else {
 							alert("Bine ai venit printre noi, "+data['name']);
 							table();
-							$("section").fadeIn(500);
+							$("div.section").fadeIn(500);
 						}
 					})
 				return false;
@@ -50,8 +50,8 @@ function form(type){
 			case 'logout' :
 				$("form").submit(function(){
 					$.post("/php/logout.php", function(data){
-							$("article").html("<a href='javascript:form(\"login\")' class='abloc'>Autentifica-te !</a>");
-							$("section").fadeOut(500);
+							$("div.article").html("<a href='javascript:form(\"login\")' class='abloc'>Autentifica-te !</a>");
+							$("div.section").fadeOut(500);
 					}, 'json');
 				return false;
 				});
@@ -88,8 +88,8 @@ function form(type){
 			$("#date").date_input();
 			$("form").submit(function(){
 				date = $("input#date").val();
-				$("article").load("/php/table.php", {date: date});
-				$("section#luna").html(date);
+				$("div.article").load("/php/table.php", {date: date});
+				$("div.section#luna").html(date);
 			return false;
 			});
 	break;
@@ -99,7 +99,7 @@ function form(type){
 
 function table(date)	{
 	if (!date) 	date = '';
-	$("article").load("/php/table.php", {date: date});
+	$("div.article").load("/php/table.php", {date: date});
 }
 
 $(document).ready(function() {

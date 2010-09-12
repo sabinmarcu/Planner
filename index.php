@@ -14,13 +14,13 @@
 	
 </head>
 <body>
-	<header>	Planiflex v1.0	</header>
-	<section id='admin' style="<?php if ($_SESSION[id]) echo "display: block"; ?>">	<a href='javascript:form("admin")'>Profilul meu</a> | <a href='javascript:form("logout")'>Deautentifica-ma</a> <br> <a href='javascript:form("date")'>Alege o luna</a>	</section>
-	<article>
+	<div class='header'>	Planiflex v1.0	</div>
+	<div class='section' id='admin' style="<?php if ($_SESSION[id]) echo "display: block"; ?>">	<a href='javascript:form("admin")'>Profilul meu</a> | <a href='javascript:form("logout")'>Deautentifica-ma</a> <br> <a href='javascript:form("date")'>Alege o luna</a>	</div>
+	<div class='article'>
 		<?php if (!isset($_SESSION[id])) : ?><a href='javascript:form("login")' class='abloc'>Autentifica-te !</a> <?php else : include 'php/table.php'; endif; ?>
-	</article>	
-	<section id='luna' style="<?php if ($_SESSION[id]) echo "display: block"; ?>">	Luna Curenta	</section>
-	<aside>
+	</div>	
+	<div class='section' id='luna' style="<?php if ($_SESSION[id]) echo "display: block"; ?>">	Luna Curenta	</div>
+	<div class='aside'>
 		<p>Acest program functioneaza pe baza unui tipar si a unei zi de pornire. Spre exemplu, in timpul saptamanii aveti program normal si in weekend aveti liber. In programul acesta se traduce prin : </p>
 		<ul>
 			<li>Tipar : <span>Lucru > Lucru > Lucru > Lucru > Lucru > Liber > Liber</span></li>
@@ -28,5 +28,5 @@
 		</ul>
 		<p>Pornind de la aceste date, programul poate calcula o luna din anul 2500 daca doriti.</p>
 		<p>De asenenea, cu tabelul in fata, daca doriti ca doar o zi sa fie tratata special, atunci doar dati click pe ea si introduceti particularitatea. Daca nu o mai doriti, apasati click dreapta pe casuta respectiva si va aparea programul corect conform tiparului.</p>
-	</aside>
+	</div>
 </body>
